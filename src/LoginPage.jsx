@@ -13,7 +13,7 @@ function LoginPage() {
     useEffect(() => {
         const checkConnection = async () => {
             try {
-                await axios.get('vite-project-zbr.us-west-2.elasticbeanstalk.com/api/test');
+                await axios.get('https://vite-project-zbr.us-west-2.elasticbeanstalk.com/api/test');
                 setConnectionError('');
             } catch (err) {
                 setConnectionError('Failed to connect to the backend. Please check your server.');
@@ -34,7 +34,7 @@ function LoginPage() {
         }
 
         try {
-            const response = await axios.post('vite-project-zbr.us-west-2.elasticbeanstalk.com/api/auth/login', { 
+            const response = await axios.post('https://vite-project-zbr.us-west-2.elasticbeanstalk.com/api/auth/login', { 
                 username, 
                 password 
             });
