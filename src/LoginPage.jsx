@@ -1,4 +1,4 @@
-// src/components/LoginPage.jsx
+// src/components/LoginPage.jsx for test purposes
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './LoginPage.css';
